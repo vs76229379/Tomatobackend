@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongoURI = 'mongodb+srv://tomato:7622937912@cluster0.skiyher.mongodb.net/tomatomern?retryWrites=true&w=majority' // Customer change url to your db you created in atlas
+const mongoURI = process.env.DATABASE // Customer change url to your db you created in atlas
 
 const mongoDB =async() =>{
    await mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
