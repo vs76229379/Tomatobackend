@@ -4,7 +4,7 @@ const port = process.env.PORT || 10000
 const mongoDB = require("./db")
 
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://tomatomernappbackend.onrender.com","https://tomatofront.onrender.com")
+  res.setHeader("Access-Control-Allow-Origin","https://tomatofront.onrender.com")
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
